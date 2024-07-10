@@ -1,24 +1,13 @@
-import { useState } from "react";
+import { handleOpen } from "../lib/helpers";
 
 function Navbar() {
-  const [openClose, setOpenClose] = useState("none");
-  const handleOpenClose = () => {
-    if (openClose === "none") {
-      setOpenClose("block");
-    } else {
-      setOpenClose("none");
-    }
-  };
   return (
     <div className="w3-top">
       <div
         className="w3-white w3-xlarge"
         style={{ maxWidth: 1200, margin: "auto" }}
       >
-        <div
-          className={["w3-button w3-padding-16 w3-left", openClose]}
-          onClick={handleOpenClose}
-        >
+        <div className="w3-button w3-padding-16 w3-left" onClick={handleOpen}>
           ☰
         </div>
         <div className="w3-right w3-padding-16">Mail</div>

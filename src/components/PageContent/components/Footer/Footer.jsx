@@ -5,7 +5,7 @@ import PopularTags from "./components/PopularTags";
 
 function Footer() {
   return (
-    <footer class="w3-row-padding w3-padding-32">
+    <footer className="w3-row-padding w3-padding-32">
       <LoremIpsum />
       <BlogPosts />
       <PopularTags />
